@@ -1,0 +1,32 @@
+{
+  "pages.home": "Home",
+  "pages.contact": "Contact",
+
+  "home": {
+    "title": "Hi. I'm Sávio.",
+    "intro": {
+      "p1": "I'm a software engineer with over 5 years of experience, specializing in frontend development with a strong focus on technologies like React, Angular, JavaScript, and TypeScript.",
+      "p2": "Over the past decade, I've dedicated myself to studying, refining, and applying solid software engineering principles — building scalable and high-performance applications, clean and efficient code, and prioritizing user experience. Along the way, I've collaborated with teams of all sizes across a wide range of projects, from startups to large enterprises, including a North American Big Tech leader company in the electronics sector, where I faced some of the most complex challenges of my career.",
+      "p3": "I also believe strongly that technology holds the power to create meaningful personal and social impact. Every new project is an opportunity to deliver solutions that bring real value to people's lives.",
+      "p4": "Want to chat about software development, consulting, or creative philosophy? Let's talk."
+    },
+    "projects": "Projects"
+  },
+
+  "contact": {
+    "role": "Software Engineer",
+    "title": "Let's chat",
+    "info": "You can message me here.",
+    "name": "Name",
+    "email": "Email",
+    "subject": "Subject",
+    "message": "Message",
+    "submit": "Submit",
+    "required": "Required field",
+    "status": {
+      "sending": "Sending your message",
+      "error": "An error occurred. Try again.",
+      "success": "Message sent."
+    }
+  }
+}
