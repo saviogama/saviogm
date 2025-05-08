@@ -2,12 +2,19 @@ import { render, screen } from '@testing-library/react';
 import { describe, expect, it, vi } from 'vitest';
 import Home from './Home';
 
-vi.mock('react-i18next', () => ({
-  useTranslation: () => ({
-    t: (key: string) => key,
-    i18n: { language: 'en' },
-  }),
-}));
+vi.mock('react-i18next', async () => {
+  const actual = await vi.importActual<typeof import('react-i18next')>(
+    'react-i18next'
+  );
+  return {
+    ...actual,
+    useTranslation: () => ({
+      t: (key: string) => key,
+      i18n: { language: 'en' },
+    }),
+    Trans: ({ i18nKey }: { i18nKey: string }) => i18nKey,
+  };
+});
 
 vi.mock('../../hooks/useMetadata', () => ({
   useMetadata: vi.fn(),
