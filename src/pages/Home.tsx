@@ -5,8 +5,8 @@ import { useMetadata } from '../hooks/useMetadata';
 
 function Home() {
   const { t, i18n } = useTranslation();
-  const lang = ['pt', 'en'].includes(i18n.language)
-    ? (i18n.language as 'pt' | 'en')
+  const lang = ['pt-BR', 'en'].includes(i18n.language)
+    ? (i18n.language as 'pt-BR' | 'en')
     : 'en';
 
   useMetadata({

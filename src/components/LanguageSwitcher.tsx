@@ -7,9 +7,11 @@ export function LanguageSwitcher() {
     <button
       aria-label="Language switcher"
       className="w-10 h-10 flex items-center justify-center text-sm font-medium border border-gray-300 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-zinc-800 transition-colors cursor-pointer"
-      onClick={() => i18n.changeLanguage(i18n.language === 'pt' ? 'en' : 'pt')}
+      onClick={() =>
+        i18n.changeLanguage(i18n.language === 'pt-BR' ? 'en' : 'pt-BR')
+      }
     >
-      {i18n.language === 'pt' ? 'EN' : 'PT'}
+      {i18n.language === 'pt-BR' ? 'EN' : 'PT'}
     </button>
   );
 }
