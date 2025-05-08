@@ -61,8 +61,8 @@ export default function Contact() {
       </div>
       <section className="flex flex-col items-center mt-14">
         <div className="flex flex-col items-center">
-          <h1 className="text-3xl font-bold mb-4">{t('contact.title')}</h1>
-          <p className="text-lg mb-6">{t('contact.info')}</p>
+          <h3 className="text-xl font-bold mb-2">{t('contact.title')}</h3>
+          <span className="text-base mb-6">{t('contact.info')}</span>
         </div>
 
         <form onSubmit={handleSubmit(onSubmit)} className="max-w-xl w-full">
