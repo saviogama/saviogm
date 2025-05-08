@@ -5,7 +5,9 @@ import { useMetadata } from '../hooks/useMetadata';
 
 function Home() {
   const { t, i18n } = useTranslation();
-  const lang = i18n.language as 'pt' | 'en';
+  const lang = ['pt', 'en'].includes(i18n.language)
+    ? (i18n.language as 'pt' | 'en')
+    : 'en';
 
   useMetadata({
     title: 'Sávio Gama',
@@ -40,12 +42,12 @@ function Home() {
           {projects.map((project) => (
             <ProjectCard
               link={project.link}
-              description={project.description[lang]}
               github={project.github}
               image={project.image}
               key={project.id}
               tags={project.tags}
               title={project.title[lang]}
+              description={project.description[lang]}
             />
           ))}
         </div>
