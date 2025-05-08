@@ -1,4 +1,5 @@
-import { useTranslation } from 'react-i18next';
+import { Trans, useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
 import { ProjectCard } from '../../components/ProjectCard/ProjectCard';
 import { projects } from '../../data/projects';
 import { useMetadata } from '../../hooks/useMetadata';
@@ -25,7 +26,19 @@ function Home() {
             <p className="text-base mb-8">{t('home.intro.p1')}</p>
             <p className="text-base mb-8">{t('home.intro.p2')}</p>
             <p className="text-base mb-8">{t('home.intro.p3')}</p>
-            <p className="text-base">{t('home.intro.p4')}</p>
+            <p className="text-base">
+              <Trans
+                i18nKey="home.intro.p4"
+                components={{
+                  CustomLink: (
+                    <Link
+                      to="/contact"
+                      className="text-base text-blue-500 hover:underline"
+                    />
+                  ),
+                }}
+              />
+            </p>
           </div>
 
           <img
