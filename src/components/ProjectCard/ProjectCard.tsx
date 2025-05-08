@@ -1,15 +1,7 @@
 import { motion } from 'framer-motion';
 import { ExternalLink, Github } from 'lucide-react';
 import { SiAngular, SiJavascript, SiReact, SiTypescript } from 'react-icons/si';
-
-type ProjectCardProps = {
-  description: string;
-  github: string;
-  image: string;
-  link: string;
-  tags: string[];
-  title: string;
-};
+import type { ProjectCardProps } from './ProjectCard.types';
 
 export function ProjectCard({
   description,

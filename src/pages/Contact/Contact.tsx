@@ -2,13 +2,8 @@ import emailjs from 'emailjs-com';
 import { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { useTranslation } from 'react-i18next';
-import { useMetadata } from '../hooks/useMetadata';
-
-type FormData = {
-  email: string;
-  message: string;
-  name: string;
-};
+import { useMetadata } from '../../hooks/useMetadata';
+import type { FormData } from './Contact.types';
 
 export default function Contact() {
   const { t } = useTranslation();
@@ -48,8 +43,8 @@ export default function Contact() {
       setStatus('success');
       reset();
     } catch (error) {
+      void error;
       setStatus('error');
-      throw error;
     }
   };
 

@@ -1,9 +1,9 @@
 import { useTranslation } from 'react-i18next';
 import { NavLink, Route, Routes } from 'react-router-dom';
-import { LanguageSwitcher } from './components/LanguageSwitcher';
-import { ThemeToggle } from './components/ThemeToggle';
-import Contact from './pages/Contact';
-import Home from './pages/Home';
+import { LanguageSwitcher } from './components/LanguageSwitcher/LanguageSwitcher';
+import { ThemeToggle } from './components/ThemeToggle/ThemeToggle';
+import Contact from './pages/Contact/Contact';
+import Home from './pages/Home/Home';
 
 function App() {
   const { t } = useTranslation();

@@ -1,7 +1,7 @@
 import { useTranslation } from 'react-i18next';
-import { ProjectCard } from '../components/ProjectCard';
-import { projects } from '../data/projects';
-import { useMetadata } from '../hooks/useMetadata';
+import { ProjectCard } from '../../components/ProjectCard/ProjectCard';
+import { projects } from '../../data/projects';
+import { useMetadata } from '../../hooks/useMetadata';
 
 function Home() {
   const { t, i18n } = useTranslation();
