@@ -20,7 +20,7 @@
     "name": "Nome",
     "email": "Email",
     "subject": "Assunto",
-    "message": "Messagem",
+    "message": "Mensagem",
     "submit": "Enviar",
     "required": "Campo obrigatório",
     "status": {
