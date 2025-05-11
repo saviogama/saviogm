@@ -9,7 +9,7 @@ function App() {
   const { t } = useTranslation();
 
   return (
-    <div className="min-h-screen w-full bg-white dark:bg-zinc-900 text-zinc-900 dark:text-white transition-colors overflow-x-hidden">
+    <div className="font-dm-sans min-h-screen w-full bg-white dark:bg-zinc-900 text-zinc-900 dark:text-white transition-colors overflow-x-hidden">
       <div className="max-w-7xl mx-auto w-full px-4">
         <header className="py-4 flex justify-between items-center">
           <nav className="space-x-4">

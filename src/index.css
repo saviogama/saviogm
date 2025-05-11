@@ -1,8 +1,25 @@
+@font-face {
+  font-family: DM Sans;
+  src: url("/assets/fonts/DMSans-Regular.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: DM Serif Display;
+  src: url("/assets/fonts/DMSerifDisplay-Regular.ttf") format("truetype");
+  font-display: swap;
+}
+
 @import "tailwindcss";
+
 @custom-variant dark (&:where(.dark, .dark *));
 
+@theme {
+  --font-dm-sans: DM Sans, ui-sans-serif, Arial, -apple-system, "sans-serif";
+  --font-dm-serif-display: DM Serif Display, ui-serif, Arial, -apple-system, "serif";
+}
+
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 

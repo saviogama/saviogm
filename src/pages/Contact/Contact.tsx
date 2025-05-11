@@ -22,8 +22,8 @@ export default function Contact() {
   useMetadata({
     title: 'Sávio Gama',
     description: t('home.intro.p4'),
-    image: '/og-image.png',
-    url: 'https://meuportfolioreact.com/',
+    image: '/favicon.svg',
+    url: 'https://saviogama.dev/',
   });
 
   const onSubmit = async (data: FormData) => {
@@ -54,7 +54,7 @@ export default function Contact() {
       <section className="flex flex-col gap-4 md:flex-row justify-between items-center">
         <div className="flex flex-col md:flex-row md:space-x-4 items-center justify-center md:justify-start">
           <h1 className="text-3xl font-bold tracking-wider">Sávio Gama</h1>
-          <h2 className="text-sm">{t('contact.role')}</h2>
+          <h2 className="font-dm-serif-display text-sm">{t('contact.role')}</h2>
         </div>
 
         <div className="flex items-center gap-x-4">
@@ -84,7 +84,9 @@ export default function Contact() {
       <section className="flex flex-col items-center mt-14">
         <div className="flex flex-col items-center">
           <h3 className="text-xl font-bold mb-2">{t('contact.title')}</h3>
-          <span className="text-base mb-6">{t('contact.info')}</span>
+          <span className="font-dm-serif-display text-base mb-6">
+            {t('contact.info')}
+          </span>
         </div>
 
         <form onSubmit={handleSubmit(onSubmit)} className="max-w-xl w-full">
@@ -137,7 +139,7 @@ export default function Contact() {
             <button
               type="submit"
               disabled={status === 'sending'}
-              className="px-4 py-2 mt-4 bg-black dark:bg-white text-white dark:text-black hover:opacity-80 transition disabled:opacity-50"
+              className="px-4 py-2 mt-4 bg-black dark:bg-white text-white dark:text-black hover:opacity-80 transition disabled:opacity-50 cursor-pointer"
             >
               {status === 'sending'
                 ? t('contact.status.sending')

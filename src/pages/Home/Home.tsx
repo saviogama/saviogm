@@ -13,8 +13,8 @@ function Home() {
   useMetadata({
     title: 'Sávio Gama',
     description: t('home.intro.p1'),
-    image: '/og-image.png',
-    url: 'https://meuportfolioreact.com/',
+    image: '/favicon.svg',
+    url: 'https://saviogama.dev/',
   });
 
   return (
@@ -23,10 +23,16 @@ function Home() {
         <h1 className="text-3xl font-bold mb-4">{t('home.title')}</h1>
         <div className="flex flex-col md:flex-row justify-between items-center md:items-start gap-8">
           <div className="flex-1">
-            <p className="text-base mb-8">{t('home.intro.p1')}</p>
-            <p className="text-base mb-8">{t('home.intro.p2')}</p>
-            <p className="text-base mb-8">{t('home.intro.p3')}</p>
-            <p className="text-base">
+            <p className="font-dm-serif-display text-base mb-8 tracking-wide">
+              {t('home.intro.p1')}
+            </p>
+            <p className="font-dm-serif-display text-base mb-8 tracking-wide">
+              {t('home.intro.p2')}
+            </p>
+            <p className="font-dm-serif-display text-base mb-8 tracking-wide">
+              {t('home.intro.p3')}
+            </p>
+            <p className="font-dm-serif-display text-base tracking-wide">
               <Trans
                 i18nKey="home.intro.p4"
                 components={{
@@ -42,7 +48,7 @@ function Home() {
           </div>
 
           <img
-            src="/images/profile-pic.png"
+            src="/assets/profile-pic.png"
             alt="Foto de perfil"
             className="w-full max-w-[300px] md:max-w-[350px] aspect-square object-cover"
           />
