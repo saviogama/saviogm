@@ -2,6 +2,36 @@ export const projects = [
   {
     id: '1',
     title: {
+      en: '30 Movies in 30 Days App',
+      'pt-BR': 'App 30 Dias de Filmes',
+    },
+    description: {
+      en: 'An app that recommends 30 movies based on your personal taste.',
+      'pt-BR': 'Um app que recomenda 30 filmes com base em seu gosto pessoal.',
+    },
+    tags: ['React', 'TypeScript'],
+    image: '/assets/30-day-movie.png',
+    github: 'https://github.com/saviogama/30-day-movie',
+    link: 'https://30-day-movie.vercel.app',
+  },
+  {
+    id: '2',
+    title: {
+      en: '30 Movies in 30 Days API',
+      'pt-BR': 'API 30 Dias de Filmes',
+    },
+    description: {
+      en: 'Secure API that uses TMDB and OpenAI APIs to query and recommend movies.',
+      'pt-BR':
+        'API segura que usa a API do TMDB e da OpenAI para consultar e recomendar os filmes.',
+    },
+    tags: ['Node.js', 'TypeScript'],
+    image: '/assets/30-day-movie-api.png',
+    github: 'https://github.com/saviogama/30-day-movie-server',
+  },
+  {
+    id: '3',
+    title: {
       en: 'My Portfolio Website',
       'pt-BR': 'Meu Site Portfólio',
     },
@@ -13,21 +43,5 @@ export const projects = [
     image: '/assets/saviogm.png',
     github: 'https://github.com/saviogama/saviogm',
     link: 'https://saviogama.dev',
-  },
-  {
-    id: '2',
-    title: {
-      en: '30 day movie app',
-      'pt-BR': 'App 30 dias de filmes',
-    },
-    description: {
-      en: 'An app that recommends 30 movies based on your personal taste. Uses OpenAI API.',
-      'pt-BR':
-        'Um app que recomenda 30 filmes com base em seu gosto pessoal. Usa a API da OpenAI.',
-    },
-    tags: ['React', 'TypeScript'],
-    image: '/assets/30-day-movie.png',
-    github: 'https://github.com/saviogama/30-day-movie',
-    link: 'https://30-day-movie.vercel.app',
   },
 ];

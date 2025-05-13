@@ -1,6 +1,12 @@
 import { motion } from 'framer-motion';
 import { ExternalLink, Github } from 'lucide-react';
-import { SiAngular, SiJavascript, SiReact, SiTypescript } from 'react-icons/si';
+import {
+  SiAngular,
+  SiJavascript,
+  SiNodedotjs,
+  SiReact,
+  SiTypescript,
+} from 'react-icons/si';
 import type { ProjectCardProps } from './ProjectCard.types';
 
 export function ProjectCard({
@@ -14,6 +20,7 @@ export function ProjectCard({
   const tagIconMap: Record<string, React.ReactNode> = {
     react: <SiReact size={14} className="ml-1 text-sky-500" />,
     angular: <SiAngular size={14} className="ml-1 text-red-500" />,
+    'node.js': <SiNodedotjs size={14} className="ml-1 text-red-500" />,
     javascript: <SiJavascript size={14} className="ml-1 text-yellow-400" />,
     typescript: <SiTypescript size={14} className="ml-1 text-blue-500" />,
   };
@@ -58,15 +65,17 @@ export function ProjectCard({
             >
               <Github />
             </a>
-            <a
-              aria-label="Link"
-              className="hover:opacity-75"
-              href={link}
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              <ExternalLink />
-            </a>
+            {link && (
+              <a
+                aria-label="Link"
+                className="hover:opacity-75"
+                href={link}
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <ExternalLink />
+              </a>
+            )}
           </div>
         </div>
       </div>
