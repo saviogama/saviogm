@@ -1,13 +1,11 @@
 @font-face {
   font-family: DM Sans;
-  src: url("/assets/fonts/DMSans-Regular.ttf") format("truetype");
-  font-display: swap;
+  src: url("/assets/fonts/DMSans-Regular.ttf");
 }
 
 @font-face {
-  font-family: DM Serif Display;
-  src: url("/assets/fonts/DMSerifDisplay-Regular.ttf") format("truetype");
-  font-display: swap;
+  font-family: Lora;
+  src: url("/assets/fonts/Lora-SemiBold.ttf");
 }
 
 @import "tailwindcss";
@@ -16,7 +14,7 @@
 
 @theme {
   --font-dm-sans: DM Sans, ui-sans-serif, Arial, -apple-system, "sans-serif";
-  --font-dm-serif-display: DM Serif Display, ui-serif, Arial, -apple-system, "serif";
+  --font-lora: Lora, ui-serif, Arial, -apple-system, "serif";
 }
 
 :root {

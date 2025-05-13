@@ -23,16 +23,16 @@ function Home() {
         <h1 className="text-3xl font-bold mb-4">{t('home.title')}</h1>
         <div className="flex flex-col md:flex-row justify-between items-center md:items-start gap-8">
           <div className="flex-1">
-            <p className="font-dm-serif-display text-base mb-8 tracking-wide">
+            <p className="font-lora text-base mb-8 text-neutral-800 dark:text-neutral-200 tracking-wide">
               {t('home.intro.p1')}
             </p>
-            <p className="font-dm-serif-display text-base mb-8 tracking-wide">
+            <p className="font-lora text-base mb-8 text-neutral-800 dark:text-neutral-200 tracking-wide">
               {t('home.intro.p2')}
             </p>
-            <p className="font-dm-serif-display text-base mb-8 tracking-wide">
+            <p className="font-lora text-base mb-8 text-neutral-800 dark:text-neutral-200 tracking-wide">
               {t('home.intro.p3')}
             </p>
-            <p className="font-dm-serif-display text-base tracking-wide">
+            <p className="font-lora text-base tracking-wide">
               <Trans
                 i18nKey="home.intro.p4"
                 components={{

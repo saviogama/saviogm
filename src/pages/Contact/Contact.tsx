@@ -54,7 +54,9 @@ export default function Contact() {
       <section className="flex flex-col gap-4 md:flex-row justify-between items-center">
         <div className="flex flex-col md:flex-row md:space-x-4 items-center justify-center md:justify-start">
           <h1 className="text-3xl font-bold tracking-wider">Sávio Gama</h1>
-          <h2 className="font-dm-serif-display text-sm">{t('contact.role')}</h2>
+          <h2 className="font-lora text-sm text-neutral-800 dark:text-neutral-200">
+            {t('contact.role')}
+          </h2>
         </div>
 
         <div className="flex items-center gap-x-4">
@@ -84,7 +86,7 @@ export default function Contact() {
       <section className="flex flex-col items-center mt-14">
         <div className="flex flex-col items-center">
           <h3 className="text-xl font-bold mb-2">{t('contact.title')}</h3>
-          <span className="font-dm-serif-display text-base mb-6">
+          <span className="font-lora text-base text-neutral-800 dark:text-neutral-200 mb-6">
             {t('contact.info')}
           </span>
         </div>
@@ -96,7 +98,7 @@ export default function Contact() {
               id="name"
               type="text"
               placeholder={t('contact.name')}
-              className="w-full p-2 my-2 border dark:bg-zinc-800"
+              className="w-full p-2 my-2 border placeholder-gray-700 dark:placeholder-gray-500 dark:bg-zinc-800"
               {...register('name', { required: true })}
             />
             {errors.name && (
@@ -111,7 +113,7 @@ export default function Contact() {
               id="email"
               type="email"
               placeholder={t('contact.email')}
-              className="w-full p-2 my-2 border dark:bg-zinc-800"
+              className="w-full p-2 my-2 border placeholder-gray-700 dark:placeholder-gray-500 dark:bg-zinc-800"
               {...register('email', { required: true })}
             />
             {errors.email && (
@@ -125,7 +127,7 @@ export default function Contact() {
             <textarea
               id="message"
               placeholder={t('contact.message')}
-              className="w-full p-2 my-2 border dark:bg-zinc-800 h-32 resize-none"
+              className="w-full p-2 my-2 border placeholder-gray-700 dark:placeholder-gray-500 dark:bg-zinc-800 h-32 resize-none"
               {...register('message', { required: true })}
             />
             {errors.message && (

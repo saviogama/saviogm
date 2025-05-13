@@ -42,6 +42,5 @@ export const projects = [
     tags: ['React', 'TypeScript'],
     image: '/assets/saviogm.png',
     github: 'https://github.com/saviogama/saviogm',
-    link: 'https://saviogama.dev',
   },
 ];
