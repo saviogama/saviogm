@@ -1,7 +1,7 @@
 # Sávio Gama
-Este é o meu portfólio como desenvolvedor. Aqui você encontra meus projetos, stack atual, e formas de contato.
+My portfolio website as a developer.
 
-## 🚀 Tecnologias
+## Tech
 - [React 19](https://react.dev)
 - [Vite](https://vitejs.dev)
 - [TypeScript](https://www.typescriptlang.org)
@@ -12,32 +12,32 @@ Este é o meu portfólio como desenvolvedor. Aqui você encontra meus projetos, 
 - [React Hook Form](https://react-hook-form.com)
 - [Vitest + Testing Library](https://vitest.dev)
 
-## 🔧 Scripts
+## Scripts
 ```bash
-# instalar dependências
+# install dependencies
 npm install
 
-# rodar localmente
+# run locally
 npm run dev
 
-# rodar testes
+# run tests
 npm run test
 
-# rodar testes com cobertura
+# run tests with coverage
 npm run test:ci
 ```
 
-## 🧪 CI/CD
-Este projeto usa GitHub Actions para:
+## CI/CD
+This project uses GitHub Actions for:
 
-- Testes automatizados
-- Geração de coverage
-- Deploy automático para a Vercel (somente na branch main)
+- Automated tests
+- Coverage generation
+- Automatic deploy to Vercel (only on the main branch)
 
-## 🌐 Deploy
-Acesse a versão online em:
+## Deploy
+Access the online version at:
 
 👉 https://saviogama.dev
 
-## ✉️ Contato
-Você pode me encontrar no [LinkedIn](https://www.linkedin.com/in/saviogama) ou através do formulário na aba Contato do site.
+## Contact
+You can find me on [LinkedIn](https://www.linkedin.com/in/saviogama) or through the contact form in the Contact section of the website.
